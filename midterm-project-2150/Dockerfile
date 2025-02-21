@@ -30,12 +30,12 @@ RUN npm install
 # APP
 COPY --from=builder ./app/dist /var/www/html
 
-#
-COPY ./default.conf /etc/nginx/sites-available/default
+# Ensuring that Nginx loads the correct config
+COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 RUN echo "API_PORT=3000" >> /app/.env
 
-# EXPOSE ??
+EXPOSE 80 3000
 
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
