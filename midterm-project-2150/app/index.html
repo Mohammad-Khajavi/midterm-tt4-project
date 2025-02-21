@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm TT4 - Simulation</title>
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="list.html">List</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Messages</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Name</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Action</a>
+                                    <a class="dropdown-item" href="#!">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div id="content" class="container-fluid p-5">
+                <h1 class="mt-4">Simple Sidebar</h1>
+                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear
+                    non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                <p>
+                    Make sure to keep all page content within the
+                    <code>#page-content-wrapper</code>
+                    . The top navbar is optional, and just for demonstration. Just create an element with the
+                    <code>#sidebarToggle</code>
+                    ID which will toggle the menu when clicked.
+                </p>
+                <div class="alert alert-primary" role="alert">
+                    Here's an example of how to assemble your products. Pay close attention to all the details,
+                    especially the dependencies, as they are crucial for the proper setup. Although this is not
+                    described in the documentation, it would show attention to detail if you remove this example from
+                    the homepage after use. You can simply comment it out. Don’t forget to do the same for the
+                    JavaScript code to avoid any errors due to missing dependencies.
+                </div>
+
+                <div class="alert alert-warning" role="alert">
+                    Create your own layout, don't just copy this example, use your creativity.
+                </div>
+
+                <h2>Product list example</h2>
+                <div id="products" class="d-flex gap-2">
+                    <!-- Products -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
